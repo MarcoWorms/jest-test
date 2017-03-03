@@ -1,5 +1,8 @@
 module.exports = function () {
   test('a test', () => {
-    expect(1).toBe(1)
+    return new Promise(resolve => {
+      expect(1).toBe(1)
+      resolve()
+    })
   })
 }
